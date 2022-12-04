@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 # Author IAM_UKN
 if __name__ == "__main__":
-    from sys import argv
-    if len(argv) - 1 == 0:
-        print("{} arguments.".format(len(argv) - 1))
-    elif len(argv) - 1 == 1:
-        print("{} argument:".format(len(argv) - 1))
+    import sys
+    if len(sys.argv) - 1 == 0:
+        print("{} arguments.".format(len(sys.argv) - 1))
+    elif len(sys.argv) - 1 == 1:
+        print("{} argument:".format(len(sys.argv) - 1))
     else:
-        print("{} arguments:".format(len(argv) - 1))
-        for i in range(1, len(argv)):
-            print("{}: {}".format(i, argv[i]))
+        print("{} arguments:".format(len(sys.argv) - 1))
+        for i in range(1, len(sys.argv)):
+            print("{}: {}".format(i, sys.argv[i]))

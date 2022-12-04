@@ -1,3 +1,3 @@
-def add(x, y):
-    a = x + y
-    print(f"{x:d} + {y:d} = {a:d}")
+#this is just a prototype module
+def add(a, b):
+    return (a + b)
