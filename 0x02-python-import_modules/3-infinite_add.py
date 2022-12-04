@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 # Author IAM_UKN
+#!/usr/bin/python3
 if __name__ == "__main__":
     import sys
-    k = 0
-    i = len(sys.argv) - 1
-    for j in range(1, i + 1):
-            k = k + int(sys.argv[j])
-    print("{}".format(k))
+    result = 0
+    for arg in sys.argv:
+        if arg != sys.argv[0]:
+            result += int(arg)
+    print(result)
