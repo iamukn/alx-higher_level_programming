@@ -1,16 +1,14 @@
 #!/usr/bin/python3
-#UKN Himself
-
-"""Defining a square """
+# UKN Himself
+"""Defines a square """
 
 
 class Square:
-    """ Representing a square """
-
+    """Represents a square"""
 
     def __init__(self, size):
-        """ Initializing a size arguament and privatizing it using the 
-        .__size command and assigning it a value of size"""
-
+        """Initializing this square class
+        Args: size - represnets the size of the square defined
+        """
 
         self.__size = size
