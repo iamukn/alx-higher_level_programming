@@ -4,6 +4,8 @@
 
 """Defines a square """
 
+
 class Square:
-"""does nothing """   
+    """does nothing """
+
     pass
