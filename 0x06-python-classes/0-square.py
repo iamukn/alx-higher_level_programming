@@ -1,4 +1,4 @@
+#!/usr/bin/python3
+# 0-square.py by UKN
 class Square:
-    def __init__(self, length=0, breath=0):
-        self.length = length
-        self.breath = breath
+    pass
