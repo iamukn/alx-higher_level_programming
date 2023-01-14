@@ -23,6 +23,6 @@ class Square:
         """
         Calculating the area
         Return: Size raised to power 2
-        """"
+        """
 
         return (self.__size ** 2)
