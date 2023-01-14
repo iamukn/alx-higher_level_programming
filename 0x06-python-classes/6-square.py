@@ -1,51 +1,47 @@
 #!/usr/bin/python3
 # Ukn_himself
 
-"""Defining a Square"""
+"""My square module"""
 
 
 class Square:
-    """Defining a Square Class"""
+    """defines a square"""
 
     def __init__(self, size=0, position=(0, 0)):
-        """ Assigning a size variable
+        """Create a Square
         Args:
-            size: This reps the attribute
-            position: Position must be two integers
-        Raises:
-            TypeError: if size is not an interger
-            if position is not a tuple of 2 integers
-            ValueError: if size is less than 0
+            size: length of a side of Square
+            position: where the square is (coordinates)
         """
-
-        if not isinstance(size, int):
-            raise TypeError('size must be an integer')
-        if size < 0:
-            raise ValueError('size must be >= 0')
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     def __str__(self):
         self.my_print()
 
     @property
     def size(self):
-        """ retrieving the size data"""
-
+        """"The propery of size as the len of a side of Square
+        Raises:
+            TypeError: if size != int
+            ValueError: if size < 0
+        """
         return self.__size
 
     @size.setter
     def size(self, value):
         if not isinstance(value, int):
-            raise TypeError("size must be an integer")
+            raise TypeError('size must be an integer')
         if value < 0:
-            raise ValueError("size must be >= 0")
+            raise ValueError('size must be >= 0')
         self.__size = value
 
     @property
     def position(self):
-        """Retrieving the position"""
-
+        """property of the coordinates of this Square
+        Raises:
+            TypeError: if value != a tuple of 2 integers < 0
+        """
         return self.__position
 
     @position.setter
@@ -56,8 +52,7 @@ class Square:
             TypeError: if value is not a tuple or any int in tuple < 0
         """
         if not isinstance(value, tuple):
-            raise TypeError("position must be a tuple of 2 positive integers")
-
+            raise TypeError('position must be a tuple of 2 positive integers')
         if len(value) != 2:
             raise TypeError('position must be a tuple of 2 positive integers')
         if len([i for i in value if isinstance(i, int) and i >= 0]) != 2:
