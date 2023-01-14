@@ -11,6 +11,8 @@ class Square:
             self: this represents the object
             size: represents the attribute required
         Raises: raises an error if size is not a digit
+            TypeError: if size is not an integer
+            ValueError: if size is less than zero
         """
 
         if not isinstance(size, int):
