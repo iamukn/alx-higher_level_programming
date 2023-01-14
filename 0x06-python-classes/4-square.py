@@ -10,7 +10,6 @@ class Square:
     def __init__(self, size=0):
         """ Assigning a size variable
         Args:
-            self: This represents the Square object
             size: This reps the attribute
         Raises:
             TypeError: if size is not an interger
@@ -31,7 +30,7 @@ class Square:
 
     @size.setter
     def size(self, value):
-        if not isinstance(size, int):
+        if not isinstance(value, int):
             raise TypeError("size must be an integer")
         if value < 0:
             raise ValueError("size must be >= 0")
