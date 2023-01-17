@@ -7,8 +7,6 @@
 class Rectangle:
     """Defining an empty rectangle"""
 
-    pass
-
     def __init__(self, width=0, height=0):
         """Defining a new object
         Args:
