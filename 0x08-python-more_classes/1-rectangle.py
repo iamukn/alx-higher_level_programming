@@ -14,7 +14,7 @@ class Rectangle:
         Args:
             width: The first attribute
             height: The second attribute
-        Returns:
+        Raises:
             TypeError: height must be an integer
             ValueError: height must be >= 0
         """
