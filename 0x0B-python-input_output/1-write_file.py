@@ -9,4 +9,4 @@ def write_file(filename="", text=""):
     """Defining the write_file module"""
 
     with open(filename, mode='w', encoding="utf-8") as f:
-         return f.write(text)
+        return f.write(text)
