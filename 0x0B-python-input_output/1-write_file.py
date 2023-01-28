@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # ukn_himself
-import os
+
 
 """A module that writes a string to a text file"""
 
