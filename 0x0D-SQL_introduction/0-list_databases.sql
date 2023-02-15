@@ -1,2 +1,2 @@
-#!/usr/bin/mysql
+-- List all databases
 SHOW DATABASES;
