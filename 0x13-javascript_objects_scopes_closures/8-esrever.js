@@ -1,5 +1,7 @@
 #!/usr/bin/node
-
 exports.esrever = function (list) {
-  return (list.sort((a, b) => a - b));
+  return list.reduceRight(function (array, current) {
+    array.push(current);
+    return array;
+  }, []);
 };
