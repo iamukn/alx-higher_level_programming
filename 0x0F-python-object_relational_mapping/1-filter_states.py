@@ -17,7 +17,6 @@ if __name__ == "__main__":
                          passwd=argv[2], db=argv[3])
 
     cur = db.cursor()
-    cur.execute('USE hbtn_0e_0_usa')
 
     cur.execute("SELECT * FROM states WHERE name \
             LIKE BINARY 'N%' ORDER BY states.id ASC")
