@@ -10,9 +10,9 @@ request to the URL and displays the body of the response
 if __name__ == "__main__":
 
         url = argv[1]
+        req = urllib.request.Request(url)
+        res = urllib.request.urlopen(req)
         try:
-            req = urllib.request.Request(url)
-            res = urllib.request.urlopen(req)
             with res as f:
                 print(f.read().decode('ascii'))
         except urllib.error.HTTPError as e:
