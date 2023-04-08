@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Sends a url request using the url passed as argument """
+""" Sends a url request using the url passed as argument ./1-hbtn_header.py <URL> """
 
 from sys import argv
 from urllib import request
