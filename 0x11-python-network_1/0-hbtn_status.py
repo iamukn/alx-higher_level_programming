@@ -1,6 +1,7 @@
 #!/usr/bin/python3
+""" Fetches https://alx-intranet.hbtn.io/statis"""
 from urllib import request
-# Python script that fetches https://alx-intranet.hbtn.io/status
+
 
 if __name__ == "__main__":
     """ assigns the urls to a variable url
