@@ -9,7 +9,6 @@ request to the URL and displays the body of the response
 
 if __name__ == "__main__":
 
-    if len(argv) > 1:
         url = argv[1]
         try:
             req = urllib.request.Request(url)
