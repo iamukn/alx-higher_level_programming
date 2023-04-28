@@ -7,7 +7,7 @@ const id = 'https://swapi-api.alx-tools.com/api/people/18/';
 const request = require('request');
 
 request(url, (err, res, body) => {
-  if (res) {
+  if (res.statusCode === 200) {
     const js = JSON.parse(body);
     let count = 0;
     for (let i = 0; i < js.results.length; i++) {
@@ -19,8 +19,9 @@ request(url, (err, res, body) => {
     }
 
     console.log(count);
-  }
-  if (err) {
+  } else if (err) {
     console.log(err);
+  } else {
+    console.log('An error occurred. Status code: ' + res.statusCode);
   }
 });
